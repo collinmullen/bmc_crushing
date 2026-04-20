@@ -155,9 +155,9 @@
         body {
             font-family: 'DM Sans', Arial, Helvetica, sans-serif;
             font-size: var(--text-base);   /* 16px */
-            color: #222;
+            color: #1e2d3d;                /* warm-navy-tinted dark — not pure gray, references the palette */
             background: #fff;
-            line-height: 1.5;              /* 1.2–1.4em recommended; 1.5 for longer web paragraphs */
+            line-height: 1.45;             /* tightened from 1.5; Ch Appendix: 1.2–1.4em for body */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -345,7 +345,7 @@
 
         .trust-item {
             text-align: center;
-            font-size: 0.875rem;
+            font-size: var(--text-xs);     /* 12px — was 0.875rem; strong above is 1rem = 33% larger now (≥25% threshold) */
             color: #333;
             padding: 0.4rem 0.5rem;
             border-right: 1px solid #ccc;
@@ -1008,7 +1008,7 @@
         <div class="dot-logos">
             <img src="penndot.svg" alt="PennDOT" class="dot-logo dot-logo--wide">
             <img src="njdot.svg" alt="NJDOT" class="dot-logo">
-            <img src="deldot.svg" alt="DelDOT" class="dot-logo">
+            <img src="Crushing/deldot.svg" alt="DelDOT" class="dot-logo">
         </div>
         <span class="dot-approval-caption">Accepted by PennDOT, NJDOT, and DelDOT for sub-base &amp; base course applications</span>
     </div>
@@ -1265,7 +1265,7 @@
                 </div>
             </div>
             <button type="submit" class="form-submit">Send Quote Request</button>
-            <p style="font-size:0.8rem;color:#777;margin-top:0.6rem;">Clicking Send will open your email client with your details pre-filled.</p>
+            <p style="font-size:var(--text-xs);color:#777;margin-top:0.6rem;">Clicking Send will open your email client with your details pre-filled.</p>
         </form>
 
         <p class="subsection-label" style="margin-top:1.75rem;">Or copy and paste into an email</p>
